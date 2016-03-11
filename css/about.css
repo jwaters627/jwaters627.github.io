@@ -1,0 +1,50 @@
+
+nav{
+	text-align: right;
+	height: 45px;
+	width:100%;
+	background-color: white;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	
+}
+
+nav ul{
+	margin-right: 40px;
+}
+nav li{
+	display:inline-block;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: helvetica;
+}
+
+.middle{
+	padding-left: 15px;
+	padding-right: 15px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color:black;
+}
+nav ul li a:hover{
+	font-family: colorsOfAutumn;
+	text-shadow:2px 2px 2px gray;
+}
+
+
+h1{
+	color:blue;
+	text-align:center;
+}
+
+body{
+	background-color: #585858;
+	height:500px;
+	margin:0;
+}
