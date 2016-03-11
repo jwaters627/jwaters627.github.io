@@ -28,6 +28,10 @@ nav li{
 	border-right: 1px solid black;
 }
 
+.current{
+	background-color: #8ecafc;
+}
+
 nav ul li a{
 	text-decoration: none;
 	color:black;
