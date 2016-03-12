@@ -50,7 +50,6 @@ body{
 	background-repeat: no-repeat;
 	height: 740px;
 	margin-left: -2px;
-	transition: all 1.5s;
 }
 
 
@@ -58,7 +57,7 @@ h1{
 	padding-top: 300px;
 	text-align: left;
 	color:white;
-	font-size: 27px;
+	font-size: 1.8em;
 	font-family: colorsOfAutumn;
 	margin-left:12px;
 }
@@ -66,7 +65,6 @@ h5{
 	text-align: left;
 	color:white;
 	font-family: openSans;
-	font-size:18px;
 	font-weight: 100;
 	margin-bottom: 30px;
 	letter-spacing: .5px;
@@ -76,14 +74,13 @@ h5{
 .photo_back a{
 	color: white;
 	text-decoration: none;
+	font-size: 1em;
 	padding:10px 45px 10px 45px;
 	background-color: rgba(142,202,252,.7);
 	margin-left: 80px;
-	transition: font-size 1s, opacity 1s;
 	
 }
 .photo_back a:hover{
 	color: #282828;
-	font-size:20px;
 	opacity:1;
 }
