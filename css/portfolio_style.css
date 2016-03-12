@@ -57,7 +57,7 @@ h1{
 	padding-top: 300px;
 	text-align: left;
 	color:white;
-	font-size: 1.8em;
+	font-size: 1.9vw;
 	font-family: colorsOfAutumn;
 	margin-left:12px;
 }
@@ -74,7 +74,7 @@ h5{
 .photo_back a{
 	color: white;
 	text-decoration: none;
-	font-size: 1em;
+	font-size: 1vw;
 	padding:10px 45px 10px 45px;
 	background-color: rgba(142,202,252,.7);
 	margin-left: 80px;
