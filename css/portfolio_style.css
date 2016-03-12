@@ -50,7 +50,7 @@ nav ul{
 nav img{
 	height:65px;
 	float:left;
-	margin-left: 7%;
+	margin-left: 3%;
 }
 
 nav ul{
@@ -60,6 +60,7 @@ nav ul{
 	padding-top: 15px;
 	padding-bottom: 5px;
 	padding-right: 60px;
+	margin-left: 15vw;
 	
 }
 
