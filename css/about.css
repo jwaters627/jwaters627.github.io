@@ -1,4 +1,11 @@
 
+@font-face {
+	font-family: colors_of_autumn;
+	font-style: normal;
+	font-weight: normal;
+	src: URL("../fonts/colors_of_autumn.ttf");
+}
+
 nav{
 	text-align: right;
 	height: 45px;
@@ -35,15 +42,18 @@ nav li{
 nav ul li a{
 	text-decoration: none;
 	color:black;
+	transition: all 1.5s;
+;
+	
 }
 nav ul li a:hover{
-	font-family: colorsOfAutumn;
+	font-family: colors_of_autumn;
 	text-shadow:2px 2px 2px gray;
 }
 
 
 h1{
-	color:blue;
+	color:#8ecafc;
 	text-align:center;
 }
 
