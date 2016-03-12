@@ -54,8 +54,8 @@ body{
 	background-image:url("../images/back.jpg");
 	background-size: 101vw 100vh;
 	background-color: #ffffff;
+	height:100vw;
 	background-repeat: no-repeat;
-	height: 740px;
 	margin-left: -2px;
 
 }
