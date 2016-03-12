@@ -78,6 +78,8 @@ h1{
 	padding:1.5vh 2vw 1.5vh 2vw;
 	background-color: rgba(142,202,252,.7);
 	margin-left: 7%;
+	margin-top: auto;
+	margin-bottom: auto;
 	
 }
 .photo_back a:hover{
