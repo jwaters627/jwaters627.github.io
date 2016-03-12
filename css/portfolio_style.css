@@ -6,7 +6,47 @@
 	font-weight: normal;
 	src: URL("../fonts/colors_of_autumn.ttf");
 }
+nav{
+    -moz-animation-name: dropNav;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 1.5s;
 
+    -webkit-animation-name: dropNav;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 1.5s;
+
+    animation-name: dropNav;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+}
+
+@-moz-keyframes dropNav {
+    0% {
+        -moz-transform: translatex(320px);
+    }
+    100% {
+        -moz-transform: translatex(0);
+    }
+}
+@-webkit-keyframes dropNav {
+    0% {
+        -webkit-transform: translatex(320px);
+    }
+    100% {
+        -webkit-transform: translatex(0);
+    }
+}
+@keyframes dropNav {
+    0% {
+        transform: translatex(320px);
+    }
+    100% {
+        transform: translatex(0);
+    }
+}
 
 nav ul{
 	text-align: right;
@@ -78,8 +118,7 @@ h1{
 	padding:1.5vh 2vw 1.5vh 2vw;
 	background-color: rgba(142,202,252,.7);
 	margin-left: 7%;
-	margin-top: auto;
-	margin-bottom: auto;
+	
 	
 }
 .photo_back a:hover{
