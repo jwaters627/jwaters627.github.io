@@ -1,5 +1,12 @@
 
 
+@font-face {
+	font-family: acrossTheRoad;
+	font-style: normal;
+	font-weight: normal;
+	src: URL("../font/colors_of_autumn.ttf");
+}
+
 
 nav ul{
 	text-align: right;
@@ -58,7 +65,7 @@ h1{
 	text-align: left;
 	color:white;
 	font-size: 1.9vw;
-	font-family: colorsOfAutumn;
+	font-family: copperplate;
 	margin-left:12px;
 }
 h5{
