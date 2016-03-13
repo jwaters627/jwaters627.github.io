@@ -7,7 +7,15 @@
 	src: URL("../fonts/colors_of_autumn.ttf");
 }
 nav ul{
-   
+    -moz-animation-name: slideNav;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 1.5s;
+
+    -webkit-animation-name: slideNav;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 1.5s;
 
     animation-name: slideNav;
     animation-iteration-count: 1;
@@ -15,7 +23,22 @@ nav ul{
     animation-duration: 1.5s;
 }
 
-
+@-moz-keyframes slideNav {
+    0% {
+        -moz-transform: translatex(320px);
+    }
+    100% {
+        -moz-transform: translatex(0);
+    }
+}
+@-webkit-keyframes slideNav {
+    0% {
+        -webkit-transform: translatex(320px);
+    }
+    100% {
+        -webkit-transform: translatex(0);
+    }
+}
 @keyframes slideNav {
     0% {
         transform: translatex(320px);
@@ -107,4 +130,10 @@ h1{
 .photo_back a:hover{
 	color: #282828;
 	opacity:1;
+}
+
+.about img{
+	height:30vh;
+	display: block;
+	margin: 50px auto 0 auto;
 }
