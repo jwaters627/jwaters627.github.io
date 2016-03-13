@@ -5,7 +5,8 @@
 	font-weight: normal;
 	src: URL("../fonts/colors_of_autumn.ttf");
 }
-nav ul{
+
+nav img{
     -moz-animation-name: slideNav;
     -moz-animation-iteration-count: 1;
     -moz-animation-timing-function: ease-in;
@@ -24,47 +25,48 @@ nav ul{
 
 @-moz-keyframes slideNav {
     0% {
-        -moz-transform: translatex(320px);
+        -moz-transform: scale(0,0);
     }
     100% {
-        -moz-transform: translatex(0);
+        -moz-transform: scale(320px, 320px);
     }
+
 }
 @-webkit-keyframes slideNav {
     0% {
-        -webkit-transform: translatex(320px);
+        -webkit-transform: scale(0,0);
     }
     100% {
-        -webkit-transform: translatex(0);
+        -webkit-transform: scale(320px, 320px);
     }
 }
 @keyframes slideNav {
     0% {
-        transform: translatex(320px);
+        transform: scale(0, 0);
     }
     100% {
-        transform: translatex(0);
+        transform: scale(320px, 320px);
     }
 }
+
 nav img{
 	height:65px;
 	float:left;
-	margin-left: 7%;
-}
-
-nav{
-	text-align: right;
-	height: 45px;
-	width:100%;
-	background-color: white;
-	padding-top: 3vh;
-	padding-bottom: 3.5vh;
-	
+	margin-left: 3%;
 }
 
 nav ul{
-	margin-right: 40px;
+	text-align: right;
+	height: 35px;
+	background-color: white;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	padding-right: 60px;
+	margin-left: 15vw;
+	
 }
+
+
 nav li{
 	display:inline-block;
 	padding-left: 15px;
@@ -73,18 +75,6 @@ nav li{
 	padding-bottom: 5px;
 	font-family: helvetica;
 }
-
-.middle{
-	padding-left: 15px;
-	padding-right: 15px;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
-}
-
-.current{
-	background-color: #8ecafc;
-}
-
 nav ul li a{
 	text-decoration: none;
 	color:black;
@@ -97,14 +87,29 @@ nav ul li a:hover{
 	text-shadow:2px 2px 2px gray;
 }
 
+.middle{
+	padding-left: 15px;
+	padding-right: 15px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+
+.current{
+	background-color: #8ecafc;
+}
+
+
 
 h1{
 	color:#8ecafc;
-	text-align:center;
+	text-align:center; 
+	background-color: #585858;
+	height:100vh;
+	margin:0;
 }
 
+
 body{
-	background-color: #585858;
-	height:500px;
 	margin:0;
 }
