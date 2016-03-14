@@ -84,7 +84,7 @@ nav ul li a{
 	
 }
 nav ul li a:hover{
-	font-family: colors_of_autumn;
+	font-family:colors_of_autumn, helvetica;
 	text-shadow:2px 2px 2px gray;
 }
 
@@ -115,7 +115,7 @@ body{
 	text-align: left;
 	color:white;
 	font-size: 1.9vw;
-	font-family: colors_of_autumn;
+	font-family: colors_of_autumn, helvetica;
 	margin-left:12px;
 }
 
@@ -125,6 +125,7 @@ body{
 	text-decoration: none;
 	font-size: 1vw;
 	padding:1.5vh 2vw 1.5vh 2vw;
+	font-family: helvetica;
 	background-color: rgba(142,202,252,.7);
 	margin-left: 7%;
 	
@@ -145,6 +146,6 @@ body{
 	text-align: center;
 	font-size: 40px;
 	margin-top: -5px;
-	font-family: 'Open sans', sans-serif;
+	font-family: helvetica;
 	color: #4a4a4a;
 }
