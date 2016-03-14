@@ -7,7 +7,7 @@
 	src: URL("../fonts/colors_of_autumn.ttf");
 }
 
-nav img{
+header img{
     -moz-animation-name: slideNav;
     -moz-animation-iteration-count: 1;
     -moz-animation-timing-function: ease-in;
