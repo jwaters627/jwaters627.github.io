@@ -1,0 +1,18 @@
+header nav{
+	display:none;
+}
+
+.hero {
+	background-size: 100% 350px;
+
+}
+
+.hero h1{
+	font-size: 14px;
+}
+
+.hero a{
+	font-size: 8px;
+	padding:7px 15px;
+	margin-left: 7%;
+}
