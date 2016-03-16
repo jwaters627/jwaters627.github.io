@@ -1,0 +1,20 @@
+header{
+	width:100%;
+
+}
+
+header img{
+	height:65px;
+	margin-left: 3%;
+	margin-top: 35px;
+}
+
+#tvstand img{
+	height:200px;
+	display:block;
+}
+
+#tvstand img:hover{
+	height:500px;
+	overflow:auto;
+}

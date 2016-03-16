@@ -129,11 +129,11 @@ nav ul li a:hover{
   transition: all 1s;
 }
 #social ul li:hover {
-  -webkit-transform: translate(100px, 0);
-  -moz-transform: translate(100px, 0);
-  -ms-transform: translate(100px, 0);
-  -o-transform: translate(100px, 0);
-  transform: translate(100px, 0);
+  -webkit-transform: translate(110px, 0);
+  -moz-transform: translate(110px, 0);
+  -ms-transform: translate(110px, 0);
+  -o-transform: translate(110px, 0);
+  transform: translate(110px, 0);
   background: rgba(255, 255, 255, 0.4);
 }
 #social ul li:hover a {
