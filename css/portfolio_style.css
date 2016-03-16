@@ -1,11 +1,12 @@
-/*@import url('mobile.css') (max-width: 767px);
+@import url('mobile.css') (max-width: 767px);
 
 @import url("tablet.css") (min-width: 768px) and (max-width: 1025px);
 
 @import url("desktop.css")(min-width: 1026px);
 
 
-*/
+
+
 @font-face {
 	font-family: colors_of_autumn;
 	font-style: normal;
