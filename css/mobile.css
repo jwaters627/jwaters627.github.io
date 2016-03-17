@@ -4,6 +4,21 @@ header img{
 	height:40px !important;
 }
 
+nav ul{
+	text-align: right !important;
+	height: 20px !important;
+	background-color: white;
+	padding: 30px 30px 5px 0 !important;
+	
+}
+
+nav{
+	height: 45px !important;
+	padding-bottom: 20px !important; 
+	background-color: #ffffff;
+}
+
+
 
 .hero {
 	background-size: 100% 350px !important;
@@ -11,12 +26,14 @@ header img{
 }
 
 .hero h1{
-	font-size: 12px !important;
+	font-size: 8px !important;
+	padding-top: 150px !important;
+	margin-bottom: 15px !important;
 }
 
 .hero a{
-	font-size: 8px;
-	padding:7px 10px;
-	margin-left: 7%;
+	font-size: 8px !important;
+	padding:7px 10px !important;
+	margin-left: 5% !important;
 }
 
