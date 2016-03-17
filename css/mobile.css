@@ -4,17 +4,17 @@ nav ul{
 }
 
 header img{
-	height:20px;
+	height:40px !important;
 }
 
 
 .hero {
-	background-size: 100% 350px;
-	height:350px;
+	background-size: 100% 350px !important;
+	height:350px !important;
 }
 
 .hero h1{
-	font-size: 12px;
+	font-size: 12px !important;
 }
 
 .hero a{
