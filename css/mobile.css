@@ -37,3 +37,33 @@ nav{
 	margin-left: 5% !important;
 }
 
+.about img{
+	height:100px !important;
+	display: block;
+	margin: 50px auto 0 auto;
+}
+
+#work a img{
+	height:100px !important;
+	margin: 0 auto !important;
+}
+
+.about h1{
+	text-align: center;
+	font-size: 30px !important;
+	margin-bottom: 35px !important;
+	
+}
+
+.about p{
+	font-size: 14px !important;
+	line-height: 12px !important;
+}
+
+#work h2{
+	
+	font-size: 30px !important;
+	margin-top: 40px !important;
+}
+
+
