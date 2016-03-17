@@ -30,9 +30,11 @@ nav{
 }
 
 .hero h1{
-	font-size: 8px !important;
+	font-size: 11px !important;
 	padding-top: 150px !important;
 	margin-bottom: 15px !important;
+	width:80px !important;
+	margin-left: 25px !important;
 }
 
 .hero a{
