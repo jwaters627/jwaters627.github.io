@@ -18,6 +18,10 @@ nav{
 	background-color: #ffffff;
 }
 
+#social {
+  position: fixed;
+  top: 380px !important;
+}
 
 
 .hero {
