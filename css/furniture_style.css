@@ -9,10 +9,15 @@ header img{
 	margin-top: 35px;
 }
 
-#tvstand img{
-	height:200px;
-	display:block;
+#tvstand ul li{
+	display:inline-block;
+	list-style-type: none;
 }
+
+#tvstand ul li img{
+	height:100px;
+}
+
 
 #tvstand img:hover{
 	height:500px;
