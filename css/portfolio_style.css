@@ -65,10 +65,25 @@ header{
 }
 
 header img{
-	height:65px;
+	height:45px;
 	float:left;
 	margin-left: 3%;
-	margin-top: 35px;
+	margin-top: 58px;
+
+}
+
+header h2{
+	color: black;
+	float:left;
+	margin-top: 75px;
+	padding-left: 14px;
+	font-family: colors_of_autumn;
+	font-size: 14px;
+}
+
+header h2 a{
+	text-decoration: none;
+	color: black;
 }
 
 nav{
@@ -81,7 +96,7 @@ nav ul{
 	text-align: right;
 	height: 35px;
 	background-color: white;
-	padding: 40px 60px 5px 0;
+	padding: 54px 60px 5px 0;
 	
 }
 
@@ -190,19 +205,20 @@ nav ul li a:hover{
 
 
 .hero{
-	background-image:url("../images/back3.jpg");
+	background-image:url("../images/acadia_lighthouse.png");
 	background-attachment: fixed;
 	background-size: 100% 800px;
 	height:800px;
 	background-repeat: no-repeat;
+	margin-top: -40px;
 }
 
 
 .hero h1{
-	padding-top: 300px;
-	text-align: left;
+	padding-top: 460px;
+	text-align: center;
 	color:white;
-	font-size: 27px;
+	font-size: 40px;
 	font-family: colors_of_autumn, helvetica;
 	margin-left:12px;
 	margin-bottom: 35px;
@@ -213,10 +229,10 @@ nav ul li a:hover{
 	color: white;
 	text-decoration: none;
 	font-size: 14px;
-	padding:14px 30px;
+	padding:10px 30px;
 	font-family: helvetica;
 	background-color: rgba(142,202,252,.7);
-	margin-left: 7%;
+	margin-left:43%;
 	
 	
 }
@@ -247,16 +263,21 @@ nav ul li a:hover{
 	line-height: 20px;
 }
 
-#work hr{
-	margin-top: 50px;
+#work{
+	background-image:url('../images/acadia_sunrise.png');
+	background-attachment: fixed;
+	background-size: 100% 800px;
+	height:800px;
+	background-repeat: no-repeat;
 }
 
 #work h2{
 	text-align: center;
 	font-size: 40px;
-	color:#4a4a4a;
+	color:white;
 	margin-top: 50px;
 	font-family: helvetica;
+	padding-top: 70px;
 }
 
 #work a img{
