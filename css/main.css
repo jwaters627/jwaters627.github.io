@@ -153,7 +153,7 @@ nav ul li a:hover {
     display: none; }
 
   .hero {
-    background-size: 100% 100vh; }
+    background-size: 100vw 100vh; }
 
   #jamie {
     padding-top: 50vh; } }
