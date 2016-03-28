@@ -157,17 +157,7 @@ nav ul li a:hover{
 	height:800px;
 	background-repeat: no-repeat;
 }
-@media only screen and (max-width: 500px) {
-    
-    nav{display:none
-    }
-    #social{
-    	display: none;
-    }
-    .hero{
-    	background-size: 100% 100vh;
-    }
-  }
+
 
 #jamie {
 	padding-top: 460px;
@@ -181,8 +171,21 @@ nav ul li a:hover{
 	font-family: colors_of_autumn, helvetica;
 }
 
+@media only screen and (max-width: 500px) {
+    
+    nav{display:none
+    }
+    #social{
+    	display: none;
+    }
+    .hero{
+    	background-size: 100% 100vh;
+    }
 
-
+    #jamie{
+    	padding-top: 50vh;
+  }
+}
 .hero a{
 	color: white;
 	text-decoration: none;
