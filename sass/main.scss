@@ -149,13 +149,6 @@ nav ul li a:hover{
 	border-right: 1px solid black;
 }
 
-@media only screen and (max-width: 500px) {
-    nav{display:none
-    }
-    #social{
-    	display: none;
-    }
-  }
 
 .hero{
 	background-image:url("../images/acadia_lighthouse.png");
@@ -164,6 +157,17 @@ nav ul li a:hover{
 	height:800px;
 	background-repeat: no-repeat;
 }
+@media only screen and (max-width: 500px) {
+    
+    nav{display:none
+    }
+    #social{
+    	display: none;
+    }
+    .hero{
+    	background-size: 100% 100vh;
+    }
+  }
 
 #jamie {
 	padding-top: 460px;
