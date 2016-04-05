@@ -40,9 +40,10 @@ document.getElementById('main-div').onclick = function(e) {
 function scrl() {
     window.addEventListener('scroll', function(e) {
         var y = $('body').scrollTop();
-        if (y > 827 && y < 1100) {
-        	
+        var startX = $('#photos').scrollLeft();
+        var maxX = (window.innerWidth * 0.779) * 2;
 
+        if (y > 827 && startX < maxX) {
             $("#photos").mousewheel(function(event, delta) {
                 this.scrollLeft -= (delta);
                 var x = $('#photos').scrollLeft();
@@ -66,10 +67,39 @@ function scrl() {
                 $('#inPic2').css({ right: -1100 + x * .75 });
                 $('#inPic3').css({ right: -1200 + x * 0.5 });
             });
-        } else {
-            $('#photos').off('mousewheel');
         }
-    })
+        else if(y < 829 && startX > 40){
+            $('body').scrollTop(828);
+             $("#photos").mousewheel(function(event, delta) {
+                this.scrollLeft -= (delta);
+                var x = $('#photos').scrollLeft();
+                if (x < (window.innerWidth * 0.779) * 2 && x > 0) {
+                    event.preventDefault();
+                    $('body').scrollTop(828);
+                }
+
+                if (x > 1140 && x < 2180) {
+                    $('#p1').addClass('open');
+                    $('#p2').addClass('open');
+                    $('#p3').removeClass('open');
+                } else if (x < 1140) {
+                    $('#p1').removeClass('open');
+                    $('#p2').removeClass('open');
+                } else if (x > 2180) {
+                    $('#p3').addClass('open');
+                    $('#p2').removeClass('open');
+                }
+                $('#inPic1').css({ right: -580 + x * .32 });
+                $('#inPic2').css({ right: -1100 + x * .75 });
+                $('#inPic3').css({ right: -1200 + x * 0.5 });
+            });
+
+        } 
+        else {
+            $('#photos').off('mousewheel');
+
+        }
+    });
 };
 
 window.onload = scrl();
