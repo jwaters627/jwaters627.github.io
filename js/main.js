@@ -40,7 +40,6 @@ document.getElementById('main-div').onclick = function(e) {
 function scrl() {
     window.addEventListener('scroll', function(e) {
         var y = $('body').scrollTop();
-        console.log(y);
         if (y > 827 && y < 1100) {
         	
 
@@ -49,6 +48,7 @@ function scrl() {
                 this.scrollLeft -= (delta);
                 var x = $('#photos').scrollLeft();
                 console.log(x);
+                console.log("this is the screen width " + screen.width);
                 if (x < (screen.width - (screen.width * .2)) * 2 && x > 0) {
                     event.preventDefault();
                     $('body').scrollTop(828);
