@@ -48,7 +48,7 @@ function scrl() {
 
                 this.scrollLeft -= (delta);
                 var x = $('#photos').scrollLeft();
-                if (x < 2280 && x > 0) {
+                if (x < 2000 && x > 0) {
                     event.preventDefault();
                     $('body').scrollTop(828);
                 }
