@@ -128,7 +128,7 @@ body {
 
 #photos {
   width: 79%;
-  height: 840px;
+  height: 95%;
   display: inline-block;
   float: left;
   overflow-x: scroll; }
@@ -139,7 +139,7 @@ body {
 
 #cadillac {
   width: 33.33333333%;
-  height: 840px;
+  height: 100%;
   background-image: url("../images/cadillac.jpg");
   display: inline-block;
   float: left;
@@ -159,7 +159,7 @@ body {
 
 #semuc {
   width: 33.333333333%;
-  height: 840px;
+  height: 100%;
   background-image: url("../images/semuc.jpg");
   display: inline-block;
   float: left;
@@ -177,7 +177,7 @@ body {
 
 #turkana {
   width: 33.3333333333%;
-  height: 840px;
+  height: 100%;
   background-image: url("../images/turkana.jpg");
   display: inline-block;
   float: left;
