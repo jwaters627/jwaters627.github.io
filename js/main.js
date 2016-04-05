@@ -49,7 +49,7 @@ function scrl() {
                 var x = $('#photos').scrollLeft();
                 console.log(x);
                 console.log("this is the screen width " + screen.width);
-                if (x < (screen.width - (screen.width * .2)) * 2 && x > 0) {
+                if (x < (screen.width * .78) * 2 && x > 0) {
                     event.preventDefault();
                     $('body').scrollTop(828);
                 }
