@@ -47,7 +47,7 @@ function scrl() {
 
                 this.scrollLeft -= (delta);
                 var x = $('#photos').scrollLeft();
-                if (x < (screen.width * 0.78) * 2 && x > 0) {
+                if (x < (window.innerWidth * 0.78) * 2 && x > 0) {
                     event.preventDefault();
                     $('body').scrollTop(828);
                 }
