@@ -114,6 +114,9 @@ body {
 		// BODY //
 
 
+        // FIRST SECTION //
+
+
 .hero {
     background-image: url("../images/acadia_lighthouse.png");
     background-attachment: fixed;
@@ -130,6 +133,20 @@ body {
     padding-top: 400px;
     font-family: colors_of_autumn, helvetica;
 }
+
+@media only screen and (max-width: 800px) {
+    .hero{
+        height: 60%; 
+        background-size: 100% 60%;
+    }
+
+    .hero h1{
+        padding-top:0;
+        font-size: 25px;
+    }
+
+}
+
 
 
 #about {
