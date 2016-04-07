@@ -1,4 +1,3 @@
-
 // SRHINK HEADER WHEN SCROLLED FROM TOP //
 
 
@@ -14,7 +13,6 @@ function init() {
     });
 }
 window.onload = init();
-
 
 // DROP DOWN MENU ON CLICK OF BURGER  //
 
@@ -37,65 +35,49 @@ document.getElementById('main-div').onclick = function(e) {
 // ABOUT SECTION SCROLLING IMAGES //
 
 
+function handleScroll(event, delta, maxX, sender) {
+
+    sender.scrollLeft -= (delta);
+    var x = $('#photos').scrollLeft();
+    if (x < maxX  && x > 0) {
+        event.preventDefault();
+        $('body').scrollTop(828);
+    }
+
+    if (x > 1140 && x < 2180) {
+        $('#p1').addClass('open');
+        $('#p2').addClass('open');
+        $('#p3').removeClass('open');
+    } else if (x < 1140) {
+        $('#p1').removeClass('open');
+        $('#p2').removeClass('open');
+    } else if (x > 2180) {
+        $('#p3').addClass('open');
+        $('#p2').removeClass('open');
+    }
+    $('#inPic1').css({ right: -580 + x * .32 });
+    $('#inPic2').css({ right: -1100 + x * .75 });
+    $('#inPic3').css({ right: -1200 + x * 0.5 });
+        
+}
+
 function scrl() {
     window.addEventListener('scroll', function(e) {
         var y = $('body').scrollTop();
         var startX = $('#photos').scrollLeft();
-        var maxX = (window.innerWidth * 0.779) * 2;
+        var maxX = (window.innerWidth * 0.99) * 2;
 
         if (y > 827 && startX < maxX) {
             $("#photos").mousewheel(function(event, delta) {
-                this.scrollLeft -= (delta);
-                var x = $('#photos').scrollLeft();
-                if (x < (window.innerWidth * 0.779) * 2 && x > 0) {
-                    event.preventDefault();
-                    $('body').scrollTop(828);
-                }
-
-                if (x > 1140 && x < 2180) {
-                    $('#p1').addClass('open');
-                    $('#p2').addClass('open');
-                    $('#p3').removeClass('open');
-                } else if (x < 1140) {
-                    $('#p1').removeClass('open');
-                    $('#p2').removeClass('open');
-                } else if (x > 2180) {
-                    $('#p3').addClass('open');
-                    $('#p2').removeClass('open');
-                }
-                $('#inPic1').css({ right: -580 + x * .32 });
-                $('#inPic2').css({ right: -1100 + x * .75 });
-                $('#inPic3').css({ right: -1200 + x * 0.5 });
+                handleScroll(event, delta, maxX, this);
             });
-        }
-        else if(y < 829 && startX > 40){
+        } else if (y < 829 && startX > 40) {
             $('body').scrollTop(828);
-             $("#photos").mousewheel(function(event, delta) {
-                this.scrollLeft -= (delta);
-                var x = $('#photos').scrollLeft();
-                if (x < (window.innerWidth * 0.779) * 2 && x > 0) {
-                    event.preventDefault();
-                    $('body').scrollTop(828);
-                }
-
-                if (x > 1140 && x < 2180) {
-                    $('#p1').addClass('open');
-                    $('#p2').addClass('open');
-                    $('#p3').removeClass('open');
-                } else if (x < 1140) {
-                    $('#p1').removeClass('open');
-                    $('#p2').removeClass('open');
-                } else if (x > 2180) {
-                    $('#p3').addClass('open');
-                    $('#p2').removeClass('open');
-                }
-                $('#inPic1').css({ right: -580 + x * .32 });
-                $('#inPic2').css({ right: -1100 + x * .75 });
-                $('#inPic3').css({ right: -1200 + x * 0.5 });
+            $("#photos").mousewheel(function(event, delta) {
+               handleScroll(event, delta, maxX, this);
             });
 
-        } 
-        else {
+        } else {
             $('#photos').off('mousewheel');
 
         }
@@ -105,27 +87,3 @@ function scrl() {
 window.onload = scrl();
 
 //  TESTING //
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
