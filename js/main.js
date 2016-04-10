@@ -78,7 +78,7 @@ function scrl() {
     window.addEventListener('scroll', function(e) {
         var y = $('body').scrollTop();
         var startX = $('#photos').scrollLeft();
-        var maxX = (window.innerWidth * 0.99) * 2;
+        var maxX = (window.innerWidth ) * 2;
 
         if (y > 827 && startX < maxX) {
             $("#photos").mousewheel(function(event, delta) {
@@ -102,6 +102,8 @@ window.onload = scrl();
 //  TESTING //
 
 // THIS SHOWS THE MOUSE POSITION //
+
+
 
 document.onmousemove = function(e){
     x = e.pageX;
