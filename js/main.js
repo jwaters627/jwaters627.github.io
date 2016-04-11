@@ -78,7 +78,7 @@ function scrl() {
     window.addEventListener('scroll', function(e) {
         var y = $('body').scrollTop();
         var startX = $('#photos').scrollLeft();
-        var maxX = (window.innerWidth ) * 2;
+        var maxX = (window.innerWidth) * 2;
 
         if (y > 827 && startX < maxX) {
             $("#photos").mousewheel(function(event, delta) {
@@ -105,32 +105,55 @@ window.onload = scrl();
 
 
 
-document.onmousemove = function(e){
+document.onmousemove = function(e) {
     x = e.pageX;
     y = e.pageY;
-    
-// RESIZES HEADER BASED ON MOUSE POSITION //
+
+    // RESIZES HEADER BASED ON MOUSE POSITION //
 
 
-    if($('body').scrollTop() < 100){
-     $('header').removeClass('smaller');
-     $('header').css({ height: 70}); 
-    }
-    else if((y - $('body').scrollTop()) < 120 && (y - $('body').scrollTop()) > 70){
-        $('header').css({ height: (40 * (120/(y - $('body').scrollTop())))});
-    }
-    else if((y - $('body').scrollTop()) < 70 ){
-        $('header').css({ height: 70}); 
+    if ($('body').scrollTop() < 100) {
+        $('header').removeClass('smaller');
+        $('header').css({ height: 70 });
+    } else if ((y - $('body').scrollTop()) < 120 && (y - $('body').scrollTop()) > 70) {
+        $('header').css({ height: (40 * (120 / (y - $('body').scrollTop()))) });
+    } else if ((y - $('body').scrollTop()) < 70) {
+        $('header').css({ height: 70 });
 
-    }
-    else{
+    } else {
         $('header').addClass('smaller');
-        $('header').css({ height: 40});
+        $('header').css({ height: 40 });
     };
 };
 
 
+// RESUME CLICK SHOWS RESUME //
 
+$('#resumeClick').click(function() {
+        console.log("does not have class show");
+        $('#resume').addClass('show');
+        $('#main-div').addClass('resume');
+});
+
+$('#main-div').click(function(){
+     if ($('#resume').hasClass('show') === false) {
+        return
+    }
+    else {
+         $('#resume').removeClass('show');
+        $('#main-div').removeClass('resume');
+    }
+});
+
+$('#resume').click(function(){
+     if ($('#resume').hasClass('show') === false) {
+        return
+    }
+    else {
+         $('#resume').removeClass('show');
+        $('#main-div').removeClass('resume');
+    }
+});
 
 
 

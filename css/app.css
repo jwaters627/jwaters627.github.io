@@ -93,6 +93,20 @@ body {
 @media only screen and (max-width: 800px) {
   #social {
     display: none; } }
+#resume {
+  height: 80vh;
+  width: 30%;
+  position: absolute;
+  z-index: 1000;
+  margin-left: 15%;
+  display: none; }
+
+#resume.show {
+  display: block; }
+
+#main-div.resume {
+  opacity: 0.6; }
+
 .hero {
   background-image: url("../images/acadia_lighthouse.png");
   background-attachment: fixed;
@@ -178,7 +192,7 @@ body {
 
 #semuc {
   width: 33.333333333%;
-  height: 110%;
+  height: 100%;
   background-image: url("../images/semuc.jpg");
   display: inline-block;
   float: left;
