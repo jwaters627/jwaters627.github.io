@@ -57,20 +57,7 @@ function handleScroll(event, delta, maxX, sender) {
         $('body').scrollTop(828);
     }
 
-    if (x > 1140 && x < 2180) {
-        $('#p1').addClass('open');
-        $('#p2').addClass('open');
-        $('#p3').removeClass('open');
-    } else if (x < 1140) {
-        $('#p1').removeClass('open');
-        $('#p2').removeClass('open');
-    } else if (x > 2180) {
-        $('#p3').addClass('open');
-        $('#p2').removeClass('open');
-    }
-    $('#inPic1').css({ right: -580 + x * .32 });
-    $('#inPic2').css({ right: -1100 + x * .75 });
-    $('#inPic3').css({ right: -1200 + x * 0.5 });
+    $('#triangle1').css({ top:870 - x * .32 });
 
 }
 
@@ -79,6 +66,8 @@ function scrl() {
         var y = $('body').scrollTop();
         var startX = $('#photos').scrollLeft();
         var maxX = (window.innerWidth) * 2;
+
+
 
         if (y > 827 && startX < maxX) {
             $("#photos").mousewheel(function(event, delta) {
