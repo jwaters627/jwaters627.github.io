@@ -129,8 +129,13 @@ $('#resume').click(function(){
     }
 });
 
+var width = $('body').innerWidth() / 2 ;
+console.log(width);
 
 
+
+$('#triangle1').css({"border-left-width": width});
+$('#triangle1').css({"border-right-width": width});
 
 
 
