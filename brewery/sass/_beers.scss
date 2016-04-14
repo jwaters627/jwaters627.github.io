@@ -1,0 +1,143 @@
+h2{
+	font-family: $mainfont;
+}
+
+#beers img{
+	height: 300px;
+	width: 200px;
+	margin: 0 auto;
+}
+h4 {
+	font-family: $secondaryfont;
+	text-align: center;
+}
+
+p {
+	font-family: $secondaryfont;
+}
+
+#beer{
+	text-align: center;
+	overflow: hidden;
+	width: 250px;
+}
+
+#lager{
+	height: 300px;
+	width: 100%;
+	background-image: url('../images/lager.jpg');
+	background-size: cover;
+	margin: 0 auto;
+}
+
+
+
+#lager p{
+	 width: 100%;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    font-size: 18px;
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+    background-color:rgba(220, 220, 220, 0.7);
+    background-opacity: 0.5%;
+    transform: translateY(100%) translateX(100%) rotate(50deg);
+}
+
+#lager:hover p{
+      transform: translateY(0%) translateX(0%) rotate(0deg);
+  transition: all 2s ease; 
+}
+
+#ipa{
+	height: 300px;
+	width: 100%;
+	background-image: url('../images/ipa.jpg');
+	background-size: cover;
+	margin: 0 auto;
+}
+
+
+
+#ipa p{
+	 width: 100%;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    font-size: 18px;
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+    background-color:rgba(220, 220, 220, 0.7);
+    background-opacity: 0.5%;
+    transform: translateY(100%) translateX(100%) rotate(50deg);
+}
+
+#ipa:hover p{
+      transform: translateY(0%) translateX(0%) rotate(0deg);
+  transition: all 2s ease; 
+}
+
+#porter{
+	height: 300px;
+	width: 100%;
+	background-image: url('../images/porter.jpg');
+	background-size: cover;
+	margin: 0 auto;
+}
+
+
+
+#porter p{
+	 width: 100%;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    font-size: 18px;
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+    background-color:rgba(220, 220, 220, 0.7);
+    background-opacity: 0.5%;
+    transform: translateY(100%) translateX(100%) rotate(50deg);
+}
+
+#porter:hover p{
+      transform: translateY(0%) translateX(0%) rotate(0deg);
+  transition: all 2s ease; 
+}
+
+#ale{
+	height: 300px;
+	width: 100%;
+	background-image: url('../images/ale.jpg');
+	background-size: cover;
+	margin: 0 auto;
+}
+
+
+
+#ale p{
+	 width: 100%;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    font-size: 18px;
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+    background-color:rgba(220, 220, 220, 0.7);
+    background-opacity: 0.5%;
+    transform: translateY(100%) translateX(100%) rotate(50deg);
+}
+
+#ale:hover p{
+      transform: translateY(0%) translateX(0%) rotate(0deg);
+  transition: all 2s ease; 
+}
+
+
+
+
+
+
+
+

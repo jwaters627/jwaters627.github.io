@@ -1,0 +1,45 @@
+// Navigation Bar Styles
+#menu {
+    width: 200px;
+    height: 100%;
+    background-color: darkgray;
+    img {
+        margin-top: 20px;
+    }
+    nav {
+        font-family: $mainfont;
+        ul {
+            list-style-type: none;
+            text-align: left;
+            margin-top: 5%;
+            margin-left: 0;
+        }
+        li a {
+            display: inline-block;
+            font-size: 1.8em;
+            text-transform: uppercase;
+            padding: 2.5vh;
+            color: white;
+        }
+        li a:hover {
+            color: $maincolor;
+        }
+    }
+}
+
+.top-bar {
+    height: 60px;
+    p {
+        padding-top: 10px;
+        font-family: $secondaryfont;
+    }
+    ul {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    li {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
