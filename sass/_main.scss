@@ -15,6 +15,7 @@ a{
     color: black;
 }
 
+
 // SOCIAL MEDIA LINKS //
 #social {
     position: fixed;
@@ -28,10 +29,6 @@ a{
 #social ul {
     background: transparent;
     padding: 0px;
-    -webkit-transform: translate(-170px, 0);
-    -moz-transform: translate(-170px, 0);
-    -ms-transform: translate(-170px, 0);
-    -o-transform: translate(-170px, 0);
     transform: translate(-170px, 0);
 }
 
@@ -117,9 +114,10 @@ a{
 // FIRST SECTION //
 
 #resume{
-    height: 80vh;
-    width: 30%;
-    position: absolute;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: scroll;
     z-index: 1000;
     margin-left: 15%;
     display: none;
@@ -143,23 +141,12 @@ a{
     background-repeat: no-repeat;
 }
 
-#headline{
-    height: 40%;
-    width: 40%;
-    margin: 0 auto;
-    padding-top: 12%;
-}
-
-#headline img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .hero h1 {
     text-align: center;
     color: white;
     font-size: 40px;
+    padding-top: 420px;
     font-family: colors_of_autumn, helvetica;
 }
 
@@ -215,23 +202,12 @@ a{
     background-image: url("../images/acadia_dock.jpg");
     background-size: cover;
     display: inline-block;
-    background-attachment: fixed;
     float: left;
     overflow: hidden;
 }
 
-#cadillac p {
-    text-align: center;
-    color: white;
-    font-size: 18px;
-    background-color: rgba(20, 25, 25, 0.8);
-    width: 30%;
-    margin-top: 100px;
-    right: -580px;
-    float: left;
-    border: 10px solid white;
-    position: relative;
-}
+
+// PROJECTS SECTION //
 
 #projects {
     width: 33.333333333%;
@@ -253,23 +229,46 @@ a{
     overflow: hidden;
 }
 
-#proj1 p{
+
+
+#info{
     width: 100%;
-    border-top: 2px black solid;
-    border-bottom: 2px black solid;
-    font-size: 35px;
-    margin-top: 10%;
+    color: white;
+    opacity:0;
+    margin: 0;
     text-align: center;
-    background-color:gray;
-    background-opacity: 0.5%;
-    transform: translateY(100%) translateX(100%) rotate(50deg); 
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    transition: all 1s ease; 
 }
 
 
-#proj1:hover p{
-      transform: translateY(0%) translateX(0%) rotate(0deg);
-  transition: all 2s ease; 
+#info:hover{
+    opacity: 1;
+    background-color: rgba(0,0,0,0.8);
+    transition: all 1s ease; 
 }
+
+#info h2{
+    margin: 0;
+    padding-top:30px;
+    font-family: helvetica;
+    font-size: 35;
+    text-decoration: underline;
+    
+}
+
+#info p{
+    font-size: 16px;
+    line-height:30px;
+    font-family: helvetica;
+    margin: 0;
+    margin-top: 25px;
+     width: 70%;
+    display: inline-block;
+    text-align: center;
+}
+
 
 #proj2{
     width: 49.4%;
@@ -280,23 +279,6 @@ a{
     background-size: cover;
     border: 4px solid black;
     overflow: hidden;
-}
-
-#proj2 p{
-    width: 100%;
-    border-top: 2px black solid;
-    border-bottom: 2px black solid;
-    font-size: 35px;
-    margin-top: 10%;
-    text-align: center;
-    background-color:gray;
-    background-opacity: 0.5%;
-    transform: translateY(100%) translateX(100%) rotate(50deg); 
-}
-
-#proj2:hover p{
-      transform: translateY(0%) translateX(0%) rotate(0deg);
-  transition: all 2s ease; 
 }
 
 #proj3{
@@ -310,23 +292,7 @@ a{
     overflow: hidden;
 }
 
-#proj3 p{
-    width: 100%;
-    border-top: 2px black solid;
-    border-bottom: 2px black solid;
-    font-size: 35px;
-    margin-top: 10%;
-    text-align: center;
-    background-color:gray;
-    background-opacity: 0.5%;
-    transform: translateY(100%) translateX(100%) rotate(50deg); 
-}
 
-
-#proj3:hover p{
-      transform: translateY(0%) translateX(0%) rotate(0deg);
-  transition: all 2s ease; 
-}
 
 #proj4{
     width: 49.4%;
@@ -338,24 +304,6 @@ a{
     border: 4px solid black;
     overflow: hidden;
 }
-
-#proj4 p{
-    width: 100%;
-    border-top: 2px black solid;
-    border-bottom: 2px black solid;
-    font-size: 35px;
-    margin-top: 10%;
-    text-align: center;
-    background-color:gray;
-    background-opacity: 0.5%;
-    transform: translateY(100%) translateX(100%) rotate(50deg); 
-}
-
-#proj4:hover p{
-      transform: translateY(0%) translateX(0%) rotate(0deg);
-  transition: all 2s ease; 
-}
-
 
 #turkana {
     width: 33.3333333333%;
@@ -407,27 +355,6 @@ a{
 
 #p3.open {
     display: block;
-}
-
-#triangle1{
-    width: 0; 
-    height: 0; 
-    position: absolute;
-    z-index: 99;
-    width: 0; 
-    height: 0; 
-    border-left: 700px solid transparent;
-    border-right: 700px solid transparent;
-    border-top: 400px solid rgba(120, 120, 120, 0.9);
-}
-
-#triangle1 p{
-    margin-top: -400px;
-    font-size: 25px;
-    color: white;
-    width: 800px;
-    height: 300px;
-    margin-left: -350px;
 }
 
 #thirdSection p{
