@@ -143,10 +143,12 @@ a{
 
 
 .hero h1 {
-    text-align: center;
+    text-align: left;
+    max-width: 40%;
     color: white;
+    margin: 0 auto;
     font-size: 40px;
-    padding-top: 420px;
+    padding-top: 400px;
     font-family: colors_of_autumn, helvetica;
 }
 
@@ -159,28 +161,6 @@ a{
         padding-top: 0;
         font-size: 25px;
     }
-}
-
-#about {
-    width: 20%;
-    height: 840px;
-    background-color: white;
-    display: inline-block;
-}
-
-#about h4 {
-    font-family: helvetica;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 15px;
-}
-
-#about p {
-    width: 90%;
-    margin-top: 20px;
-    font-size: 18px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 #photos {
@@ -196,7 +176,7 @@ a{
     position: relative;
 }
 
-#cadillac {
+.cadillac {
     width: 33.33333333%;
     height: 100%;
     background-image: url("../images/acadia_dock.jpg");
@@ -206,6 +186,58 @@ a{
     overflow: hidden;
 }
 
+.cadillac p{
+    width: 70%;
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    color: white;
+    background-color: rgba(60, 60, 60, 0.8)
+}
+
+#aboutmenu{
+    height: 100%;
+    width: 20%;
+    background-color: white;
+    float: left;
+}
+
+#aboutmenu h2{
+    margin: 0;
+    padding-top: 70px;
+    font-size: 35px;
+    font-family: colors_of_autumn, helvetica;
+    text-align: center;
+    padding-bottom: 30px;
+    text-decoration: underline;
+}
+
+#aboutmenu h3{
+    margin: 0;
+    padding-top: 25px;
+    font-size: 25px;
+    font-family: colors_of_autumn, helvetica;
+    text-align: center;
+}
+
+#aboutme{
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    float: right;
+    opacity: 0.6;
+}
+
+#description{
+    width: 75%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    background-color: gray;
+}
 
 // PROJECTS SECTION //
 

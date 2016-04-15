@@ -13,25 +13,25 @@
     <div id="top">
     </div>
     <header>
-        <a href="#top" data-scroll>
+        <a class= "icon-link" href="#top" data-scroll>
             <img src="images/logo.png">
             <h2>Jamie Waters</h2>
         </a>
         <nav class="navbar">
             <ul>
-                <li><a href="#about" data-scroll>ABOUT</a></li>
-                <li id="middle"><a href="#work" data-scroll>WORK</a></li>
-                <li id="resumeClick"><a href="#contact" data-scroll>RESUME</a></li>
+                <li><a class='about-link' href="#about" data-scroll>ABOUT</a></li>
+                <li id="middle"><a class='work-link' href="#work" data-scroll>WORK</a></li>
+                <li id="resumeClick"><a class='contact-link' href="#contact" data-scroll>RESUME</a></li>
             </ul>
         </nav>
         <a class="burg"><span class="hamburger"></span></a>
         <section class="menu">
             <ul>
-                <li><a href="#second" data-scroll>ABOUT</a>
+                <li><a class='second-link' href="#second" data-scroll>ABOUT</a>
                     </>
-                    <li><a href="#work" data-scroll>WORK</a>
+                    <li><a class='work-link' href="#work" data-scroll>WORK</a>
                         </>
-                        <li><a href="#contact" data-scroll>RESUME</a>
+                        <li><a class='contact-link' href="#contact" data-scroll>RESUME</a>
                             </>
             </ul>
         </section>
@@ -51,7 +51,7 @@
         </div>
         <!-- HERO -->
         <div class="hero">
-                <h1>Jamie Waters Web Design</h1>
+                <h1 id="headline"></h1>
         </div>
         <!-- ABOUT ME SECTION -->
         <div id="work">
@@ -88,7 +88,16 @@
                                 </div>
                         </div>
                     </section>
-                    <section id="cadillac">
+                    <section id='about' class="cadillac">
+                       <div id= "aboutmenu">
+                        <h2>ABOUT</h2>
+                        <h3>Professional<h3>
+                        <h3>Personal</h3>
+                       </div>
+                       <div id="aboutme">
+                        <section id="description">
+                        </section>
+                       </div>
                     </section>
                     <section id="turkana">
                     </section>
@@ -100,7 +109,6 @@
             </div>
             <script type="text/javascript" src="js/jquery.js"></script>
             <script type="text/javascript" src="js/main.js"></script>
-            <script type="text/javascript" src="js/scroll.js"></script>
             <script type="text/javascript" src="js/mousewheel.js"></script>
 </body>
 

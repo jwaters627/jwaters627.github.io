@@ -63,10 +63,8 @@ function handleScroll(event, delta, maxX, sender) {
     var x = $('#photos').scrollLeft();
     if (x < maxX && x > 0) {
         event.preventDefault();
-        $('body').scrollTop(828);
+        $('body').scrollTop(830);
     }
-
-    $('#triangle1').css({ top:870 - x * .32 });
 
 }
 
@@ -83,7 +81,7 @@ function scrl() {
                 handleScroll(event, delta, maxX, this);
             });
         } else if (y < 829 && startX > 40) {
-            $('body').scrollTop(828);
+            $('body').scrollTop(830);
             $("#photos").mousewheel(function(event, delta) {
                 handleScroll(event, delta, maxX, this);
             });
@@ -98,6 +96,102 @@ function scrl() {
 window.onload = scrl();
 
 //  TESTING //
+
+var $root =     $('html, body');
+var navHeight = 40;
+
+// top //
+
+$('.icon-link').click(function() {
+    var y = $('body').scrollTop();
+    var href = $.attr(this, 'href');
+     var animateFinal = function() {
+        $('#photos').animate({
+            scrollLeft: 0
+        }, 1000, animateTop);
+    };
+
+    var animatePhotos = function(callback) {
+        $('#photos').animate({
+            scrollLeft: 0
+        }, 1000, callback);
+    };
+    var animateTop = function(){
+         $root.stop().animate({
+      scrollTop: 0
+    }, 1000);
+    }
+    console.log(y);
+    if(y === $('#photos').offset().top - navHeight) {
+        animatePhotos(animateTop);
+    }
+    else if(y > $('#photos').offset().top - navHeight){
+        $root.stop().animate({
+            scrollTop: $(href).offset().top - navHeight
+        }, 1000, animateFinal);
+    }
+
+    else{
+    animateTop();
+    }
+
+    return false;
+});
+
+
+
+// First link
+$('.about-link').click(function() {
+    var y = $('body').scrollTop();
+    var href = $.attr(this, 'href');
+    var animatePhotos = function() {
+        $('#photos').animate({
+            scrollLeft: $root.outerWidth()
+        }, 1000);
+    };
+    console.log(y);
+    if(y === $('#photos').offset().top - navHeight) {
+        animatePhotos();
+    }
+    else{
+
+    $root.stop().animate({
+      scrollTop: $(href).offset().top - navHeight
+    }, 1500, animatePhotos);
+    }
+
+    return false;
+});
+// Work Link
+$('.work-link').click(function() {
+    var y = $('body').scrollTop();
+    var href = $.attr(this, 'href');
+    var animatePhotos = function() {
+        $('#photos').animate({
+            scrollLeft: 0
+        }, 1000);
+    };
+    console.log(y);
+    if(y === $('#photos').offset().top - navHeight) {
+        animatePhotos();
+    }
+    else{
+
+    $root.stop().animate({
+      scrollTop: $(href).offset().top - navHeight
+    }, 1000, animatePhotos);
+    }
+
+    return false;
+});
+
+
+$('html, body').bind('scroll mousedown DOMMouseScroll mousewheel keyup touchstart', function(e) {
+    if (e.which > 0 || e.type === 'mousedown' || e.type === 'mousewheel' || e.type === 'touchstart') {
+      $root.stop();
+    }
+});
+
 
 
 
@@ -129,13 +223,39 @@ $('#resume').click(function(){
     }
 });
 
-var width = $('body').innerWidth() / 2 ;
-console.log(width);
+// NAME TYPING ITSELF OUT //
+
+
+    var arr =['J', 'a', 'm', 'i', 'e', ' ','W', 'a', 't','e','r','s',' ', 'W', 'e' ,'b',' ', 'D','e','s','i','g','n'];
+    var i = 0;
+    var comment = "";
+    function slowtype() {
+        comment = comment + arr[i];
+        $('#headline').text(comment);
+
+         if(++i == arr.length)
+            {
+            return;
+            }
+        window.setTimeout(slowtype, 100);
+}
+
+slowtype();
 
 
 
-$('#triangle1').css({"border-left-width": width});
-$('#triangle1').css({"border-right-width": width});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
