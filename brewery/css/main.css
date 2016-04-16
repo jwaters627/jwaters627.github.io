@@ -49,10 +49,12 @@
   padding: 20px 20px; }
 
 #yes:hover {
-  color: #3e3e3e; }
+  color: #3e3e3e;
+  cursor: hand; }
 
 #no:hover {
-  color: #3e3e3e; }
+  color: #3e3e3e;
+  cursor: hand; }
 
 #not21 {
   width: 100%;
@@ -70,7 +72,8 @@
 #menu {
   width: 200px;
   height: 100%;
-  background-color: darkgray; }
+  background-color: white;
+  border-right: 2px solid #3e3e3e; }
   #menu img {
     margin-top: 20px; }
   #menu nav {
@@ -82,10 +85,11 @@
       margin-left: 0; }
     #menu nav li a {
       display: inline-block;
-      font-size: 1.8em;
+      font-size: 1.6em;
       text-transform: uppercase;
-      padding: 2.5vh;
-      color: white; }
+      padding-top: 2.5vh;
+      padding-bottom: 2.5vh;
+      color: black; }
     #menu nav li a:hover {
       color: #3090c0; }
 
@@ -102,8 +106,13 @@
     padding-left: 10px;
     padding-right: 10px; }
 
+.your-class {
+  height: 80vh; }
+
 .your-class img {
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  bottom: 90px; }
 
 .position-left.reveal-for-large ~ .off-canvas-content {
   margin-left: 200px; }
