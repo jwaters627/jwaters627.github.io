@@ -451,6 +451,7 @@ header.smaller #menu {
 #quote {
   width: 600px;
   height: 100px;
+  margin-top: 10%;
   background-color: rgba(100, 100, 100, 0.8);
   border: 8px solid white;
   position: absolute; }
