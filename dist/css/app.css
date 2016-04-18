@@ -476,10 +476,11 @@ header.smaller #menu {
   #quote {
     display: flex;
     width: 80%;
-    right: 10%; }
+    right: 8%; }
 
   #quote p {
-    font-size: 14px; } }
+    font-size: 14px;
+    margin-top: 4px; } }
 #hobbies h1 {
   font-family: 'Droid Sans', sans-serif;
   font-size: 40px;

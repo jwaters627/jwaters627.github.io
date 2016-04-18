@@ -241,7 +241,7 @@ function moveText(){
         $('#quote').css({'right': rdist});
     }
     else{
-        rdist = $(window).innerWidth() * .1
+        rdist = $(window).innerWidth() * 0.08
         $('#quote').css({'right': rdist});
     }
 });
