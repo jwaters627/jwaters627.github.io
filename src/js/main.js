@@ -87,15 +87,15 @@ function scrl() {
         var y = $('body').scrollTop();
         var startX = $('#photos').scrollLeft();
         var maxX = (window.innerWidth) * 2;
+        var heroHeight = $(".hero").innerHeight();
 
 
-
-        if (y > 827 && startX < maxX) {
+        if (y > heroHeight && startX < maxX) {
             $("#photos").mousewheel(function(event, delta) {
                 handleScroll(event, delta, maxX, this);
             });
         } else if (y < 829 && startX > 40) {
-            $('body').scrollTop(830);
+            $('body').scrollTop(heroHeight);
             $("#photos").mousewheel(function(event, delta) {
                 handleScroll(event, delta, maxX, this);
             });
@@ -230,18 +230,23 @@ $('html, body').bind('scroll mousedown DOMMouseScroll mousewheel keyup touchstar
 slowtype();
 
 
+// MOVING QUOTE ACROSS SUNRISE IMAGE //
 
-
-
-
-
-
-
-
-
-
-
-
+function moveText(){
+    window.addEventListener('wheel', function(e) {
+    var x = $('#photos').scrollLeft();
+    var singlePhoto = $('#photos').innerWidth() / 3;
+    var rdist = (x-1140) * 2;
+    if($(window).innerWidth() > 800){
+        $('#quote').css({'right': rdist});
+    }
+    else{
+        rdist = $(window).innerWidth() * .1
+        $('#quote').css({'right': rdist});
+    }
+});
+}
+moveText();
 
 
 

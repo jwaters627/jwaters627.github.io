@@ -2,28 +2,29 @@
 	width: 33.333333333%;
 	height:100%;
 	float: left;
+	position: relative;
 	background-image: url("../images/cadillac.jpg");
 	background-size: cover;
+	overflow: hidden;
 	}
 
-#about h1{
-	font-family: 'Droid Sans', sans-serif;
-	font-size: 40px;
-	font-weight: 400;
+#quote{
+	width: 600px;
+	height: 100px;
+	background-color: rgba(100, 100, 100, 0.8);
+	border: 8px solid white;
+	margin-top: 7%;
+	position: absolute;
+	right: -600px;
+}
+
+#quote p{
+	font-size: 18px;	
+	color: white;
+	padding: 8px;
 	text-align: center;
-	margin-top: 70px;
-	color: white;
+	font-family: 'Droid Sans', sans-serif;
 }
-
-#about h4{
-	font-size: 20px;
-	color: white;
-	font-family: helvetica;
-	font-weight: 400;
-	width: 60%;
-	margin: 0 auto;
-}
-
 @media only screen and (max-width: 800px) {
 	#about{
 		width: 100%;
@@ -34,4 +35,52 @@
 		width: 80%;
 		font-size: 15px;	
 	}
+
+	#quote{
+		display: flex;
+		width: 80%;
+		right: 10%;
+	}
+
+	#quote p{
+		font-size: 14px;
+	}
 }
+
+
+#hobbies h1{
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 40px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 70px;
+	color: white;
+}
+
+#hobbies h4{
+	font-size: 20px;
+	color: white;
+	font-family: helvetica;
+	font-weight: 400;
+	width: 60%;
+	margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 800px){
+	#hobbies{
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
