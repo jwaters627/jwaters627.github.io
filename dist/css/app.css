@@ -480,7 +480,8 @@ header.smaller #menu {
 
   #quote p {
     font-size: 14px;
-    margin-top: 4px; } }
+    margin-top: 4px;
+    margin-bottom: 4px; } }
 #hobbies h1 {
   font-family: 'Droid Sans', sans-serif;
   font-size: 40px;
