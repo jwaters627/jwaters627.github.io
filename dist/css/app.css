@@ -286,7 +286,7 @@ header.smaller #menu {
 
 @media only screen and (max-width: 800px) {
   .hero {
-    height: auto;
+    height: 60%;
     background-attachment: initial;
     background-image: url("../images/deltaLake.jpg");
     max-width: 100%; }
@@ -472,7 +472,11 @@ header.smaller #menu {
 @media only screen and (max-width: 800px) {
   #about {
     width: 100%;
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  #about h4 {
+    width: 80%;
+    font-size: 15px; } }
 #description {
   height: 2000px;
   background-color: gray;
