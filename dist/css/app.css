@@ -270,8 +270,8 @@ header.smaller #menu {
 .hero {
   background-image: url("../images/acadia_lighthouse.png");
   background-attachment: fixed;
-  background-size: 100% 800px;
-  height: 800px;
+  background-size: 100% 840px;
+  height: 100%;
   margin-top: 70px;
   background-repeat: no-repeat; }
 
