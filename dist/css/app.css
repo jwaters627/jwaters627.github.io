@@ -292,7 +292,7 @@ header.smaller #menu {
     max-width: 100%; }
 
   .hero h1 {
-    padding-top: 110px;
+    padding-top: 150px;
     max-width: 55%;
     font-size: 25px; } }
 #photos {
@@ -400,15 +400,6 @@ header.smaller #menu {
   position: relative; }
 
 @media only screen and (max-width: 800px) {
-  .hero {
-    height: 60%;
-    background-size: 100% 100%; }
-
-  .hero h1 {
-    padding-top: 150px;
-    max-width: 55%;
-    font-size: 25px; }
-
   #photos {
     overflow: visible; }
 
@@ -447,12 +438,12 @@ header.smaller #menu {
     text-decoration: underline; }
 
   #info p {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 13px;
     font-family: helvetica;
     margin: 0;
     margin-top: 25px;
-    width: 70%;
+    width: 85%;
     display: inline-block;
     text-align: center; } }
 #about {
