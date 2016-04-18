@@ -22,6 +22,7 @@
 @media only screen and (max-width: 800px) {
      .hero {
         height: auto;
+        background-attachment: initial;
         background-image: url("../images/deltaLake.jpg");
         max-width: 100%;
     }
