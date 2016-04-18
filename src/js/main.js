@@ -36,23 +36,37 @@ $('header').hover(function() {
     });
 
 
-// DROP DOWN MENU ON CLICK OF BURGER  //
+// RESUME CLICK SHOWS RESUME //
 
-
-$(".burg").click(function() {
-    console.log($('#about').scrollTop());
-    $(".menu").toggleClass('open');
+$('#resumeClick').click(function() {
+        $('#resume').addClass('show');
+        $('#main-div').addClass('resume');
 });
 
-
-// HIDE BURGER MENU ON CLICK ANYWHERE ELSE ON PAGE //
-
-document.getElementById('main-div').onclick = function(e) {
-    if (e.target != document.getElementById('menu')) {
-        $('.menu').removeClass('open');
+$('#main-div').click(function(){
+     if ($('#resume').hasClass('show') === false) {
+        return
     }
-};
+    else {
+         $('#resume').removeClass('show');
+        $('#main-div').removeClass('resume');
+    }
+});
 
+$('#resume').click(function(){
+     if ($('#resume').hasClass('show') === false) {
+        return
+    }
+    else {
+         $('#resume').removeClass('show');
+        $('#main-div').removeClass('resume');
+    }
+});
+
+$('#resumeClickSmall').click(function() {
+        $('#resume').addClass('show');
+        $('#main-div').addClass('resume');
+});
 
 // ABOUT SECTION SCROLLING IMAGES //
 
@@ -95,7 +109,7 @@ function scrl() {
 
 window.onload = scrl();
 
-//  TESTING //
+//  AUTOSCROLL //
 
 var $root =     $('html, body');
 var navHeight = 40;
@@ -195,33 +209,6 @@ $('html, body').bind('scroll mousedown DOMMouseScroll mousewheel keyup touchstar
 
 
 
-// RESUME CLICK SHOWS RESUME //
-
-$('#resumeClick').click(function() {
-        console.log("does not have class show");
-        $('#resume').addClass('show');
-        $('#main-div').addClass('resume');
-});
-
-$('#main-div').click(function(){
-     if ($('#resume').hasClass('show') === false) {
-        return
-    }
-    else {
-         $('#resume').removeClass('show');
-        $('#main-div').removeClass('resume');
-    }
-});
-
-$('#resume').click(function(){
-     if ($('#resume').hasClass('show') === false) {
-        return
-    }
-    else {
-         $('#resume').removeClass('show');
-        $('#main-div').removeClass('resume');
-    }
-});
 
 // NAME TYPING ITSELF OUT //
 

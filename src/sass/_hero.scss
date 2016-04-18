@@ -1,0 +1,32 @@
+
+.hero {
+    background-image: url("../images/acadia_lighthouse.png");
+    background-attachment: fixed;
+    background-size: 100% 800px;
+    height: 800px;
+    margin-top: 70px;
+    background-repeat: no-repeat;
+}
+
+
+.hero h1 {
+    text-align: left;
+    max-width: 40%;
+    color: white;
+    margin: 0 auto;
+    font-size: 40px;
+    padding-top: 400px;
+    font-family: colors_of_autumn, helvetica;
+}
+
+@media only screen and (max-width: 800px) {
+     .hero {
+        height: 60%;
+        background-size: 100% 100%;
+    }
+    .hero h1 {
+        padding-top: 110px;
+        max-width: 55%;
+        font-size: 25px;
+    }
+}
