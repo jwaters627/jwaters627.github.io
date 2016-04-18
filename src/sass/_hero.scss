@@ -21,9 +21,9 @@
 
 @media only screen and (max-width: 800px) {
      .hero {
-        height: 60%;
+        height: auto;
         background-image: url("../images/deltaLake.jpg");
-        background-size: 100% 60%;
+        max-width: 100%;
     }
     .hero h1 {
         padding-top: 110px;
