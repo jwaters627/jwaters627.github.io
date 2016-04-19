@@ -38,47 +38,67 @@ $('header').hover(function() {
 
 // RESUME CLICK SHOWS RESUME //
 
-$('#resumeClick').click(function() {
+
+$(window).click(function(evt){
+
+    
+    if($('#resume').hasClass('show')){
+        $('#resume').removeClass('show');
+        $('#main-div').removeClass('resume');
+    }
+    else if(evt.target.id === "resumeClick" || evt.target.id === "resumeClickSmall"){
         $('#resume').addClass('show');
         $('#main-div').addClass('resume');
+    }
+
+
+
 });
 
-$('#main-div').click(function(){
-     if ($('#resume').hasClass('show') === false) {
-        return
-    }
-    else {
-         $('#resume').removeClass('show');
-        $('#main-div').removeClass('resume');
-    }
-});
-$('header').click(function(evt){
-    if(evt.target.id === "resumeClick" || evt.target.id === "resumeClickSmall"){
-        return
-    }
-     else if ($('#resume').hasClass('show') === false) {
-        return
-    }
-    else {
-         $('#resume').removeClass('show');
-        $('#main-div').removeClass('resume');
-    }
-});
 
-$('#resume').click(function(){
-     if ($('#resume').hasClass('show') === false) {
-        return
-    }
-    else {
-         $('#resume').removeClass('show');
-        $('#main-div').removeClass('resume');
-    }
-});
 
-$('#resumeClickSmall').click(function() {
-        $('#resume').addClass('show');
-        $('#main-div').addClass('resume');
-});
+// $('#resumeClick').click(function() {
+//         $('#resume').addClass('show');
+//         $('#main-div').addClass('resume');
+// });
+
+// $('#main-div').click(function(){
+//      if ($('#resume').hasClass('show') === false) {
+//         return
+//     }
+//     else {
+//          $('#resume').removeClass('show');
+//         $('#main-div').removeClass('resume');
+//     }
+// });
+
+// $('header').click(function(evt){
+//     if(evt.target.id === "resumeClick" || evt.target.id === "resumeClickSmall"){
+//         return
+//     }
+//      else if ($('#resume').hasClass('show') === false) {
+//         return
+//     }
+//     else {
+//          $('#resume').removeClass('show');
+//         $('#main-div').removeClass('resume');
+//     }
+// });
+
+// $('#resume').click(function(){
+//      if ($('#resume').hasClass('show') === false) {
+//         return
+//     }
+//     else {
+//          $('#resume').removeClass('show');
+//         $('#main-div').removeClass('resume');
+//     }
+// });
+
+// $('#resumeClickSmall').click(function() {
+//         $('#resume').addClass('show');
+//         $('#main-div').addClass('resume');
+// });
 
 // ABOUT SECTION SCROLLING IMAGES //
 
