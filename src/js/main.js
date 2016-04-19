@@ -154,13 +154,14 @@ $('.icon-link').click(function() {
 
 
 
-// First link
+// ABOUT LINK //
+
 $('.about-link').click(function() {
     var y = $('body').scrollTop();
     var href = $.attr(this, 'href');
     var animatePhotos = function() {
         $('#photos').animate({
-            scrollLeft: $root.outerWidth()
+            scrollLeft: $root.outerWidth() * 2
         }, 1000);
     };
     console.log(y);
@@ -230,13 +231,13 @@ $('html, body').bind('scroll mousedown DOMMouseScroll mousewheel keyup touchstar
 slowtype();
 
 
-// MOVING QUOTE ACROSS SUNRISE IMAGE //
+//MOVING QUOTE ACROSS SUNRISE IMAGE //
 
 function moveText(){
     window.addEventListener('wheel', function(e) {
     var x = $('#photos').scrollLeft();
     var singlePhoto = $('#photos').innerWidth() / 3;
-    var rdist = (x-1140) * 2;
+    var rdist = (x-1230) * 2 ;
     if($(window).innerWidth() > 800){
         $('#quote').css({'right': rdist});
     }

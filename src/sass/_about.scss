@@ -1,4 +1,4 @@
-#about{
+#sunrise{
 	width: 33.333333333%;
 	height:100%;
 	float: left;
@@ -26,12 +26,12 @@
 	font-family: 'Droid Sans', sans-serif;
 }
 @media only screen and (max-width: 800px) {
-	#about{
+	#sunrise{
 		width: 100%;
 		margin-top: 0;
 	}
 
-	#about h4{
+	#sunrise h4{
 		width: 80%;
 		font-size: 15px;	
 	}
@@ -50,7 +50,7 @@
 }
 
 
-#hobbies {
+#about {
     width: 33.3333333333%;
     height: 100%;
     background-color: white;
@@ -61,7 +61,7 @@
 }
 
 
-#hobbies h1{
+#about h1{
 	font-family: 'Droid Sans', sans-serif;
 	font-size: 40px;
 	font-weight: 400;
@@ -70,7 +70,7 @@
 	color: #3e3e3e;
 }
 
-#hobbies h4{
+#about h4{
 	font-size: 20px;
 	color: #3e3e3e;
 	font-family: helvetica;
@@ -79,13 +79,22 @@
 	margin: 0 auto;
 }
 
+#about img{
+	border-radius: 200px;
+	margin-top: 80px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
+
 
 @media only screen and (max-width: 800px){
-	#hobbies{
+	#about{
 		width: 100%;
 	}
 
-	#hobbies h4{
+	#about h4{
 		width: 90%;
 		font-size: 16px;
 	}

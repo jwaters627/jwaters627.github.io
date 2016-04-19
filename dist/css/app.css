@@ -204,7 +204,8 @@ header.smaller #menu {
     display: none; }
 
   #resume {
-    max-width: 500px; } }
+    width: 500px;
+    height: 800px; } }
 @font-face {
   font-family: colors_of_autumn;
   font-style: normal;
@@ -332,9 +333,9 @@ header.smaller #menu {
 
 #info h2 {
   margin: 0;
-  padding-top: 30px;
+  padding-top: 100px;
   font-family: helvetica;
-  font-size: 35;
+  font-size: 30;
   text-decoration: underline; }
 
 #info p {
@@ -343,9 +344,25 @@ header.smaller #menu {
   font-family: helvetica;
   margin: 0;
   margin-top: 25px;
-  width: 70%;
+  width: 40%;
+  line-height: 17px;
   display: inline-block;
   text-align: center; }
+
+#info a {
+  font-family: helvetica;
+  font-size: 20px;
+  display: block;
+  background-color: #aaaaaa;
+  border-radius: 10px;
+  text-decoration: none;
+  width: 25%;
+  color: black;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  padding: 5px; }
 
 #proj1 {
   width: 50%;
@@ -383,15 +400,6 @@ header.smaller #menu {
   background-size: cover;
   overflow: hidden; }
 
-#hobbies {
-  width: 33.3333333333%;
-  height: 100%;
-  background-color: blue;
-  background-size: cover;
-  display: inline-block;
-  float: right;
-  overflow: hidden; }
-
 @media only screen and (max-width: 800px) {
   #photos {
     overflow: visible; }
@@ -425,7 +433,7 @@ header.smaller #menu {
 
   #info h2 {
     margin: 0;
-    padding-top: 30px;
+    padding-top: 40%;
     font-family: helvetica;
     font-size: 20;
     text-decoration: underline; }
@@ -438,8 +446,12 @@ header.smaller #menu {
     margin-top: 25px;
     width: 85%;
     display: inline-block;
-    text-align: center; } }
-#about {
+    text-align: center; }
+
+  #info a {
+    width: 60%;
+    font-size: 14px; } }
+#sunrise {
   width: 33.333333333%;
   height: 100%;
   float: left;
@@ -465,11 +477,11 @@ header.smaller #menu {
   font-family: 'Droid Sans', sans-serif; }
 
 @media only screen and (max-width: 800px) {
-  #about {
+  #sunrise {
     width: 100%;
     margin-top: 0; }
 
-  #about h4 {
+  #sunrise h4 {
     width: 80%;
     font-size: 15px; }
 
@@ -482,7 +494,7 @@ header.smaller #menu {
     font-size: 13px;
     margin-top: 1%;
     padding-bottom: 4px; } }
-#hobbies {
+#about {
   width: 33.3333333333%;
   height: 100%;
   background-color: white;
@@ -491,7 +503,7 @@ header.smaller #menu {
   float: right;
   overflow: hidden; }
 
-#hobbies h1 {
+#about h1 {
   font-family: 'Droid Sans', sans-serif;
   font-size: 40px;
   font-weight: 400;
@@ -499,7 +511,7 @@ header.smaller #menu {
   margin-top: 70px;
   color: #3e3e3e; }
 
-#hobbies h4 {
+#about h4 {
   font-size: 20px;
   color: #3e3e3e;
   font-family: helvetica;
@@ -507,29 +519,47 @@ header.smaller #menu {
   width: 60%;
   margin: 0 auto; }
 
+#about img {
+  border-radius: 200px;
+  margin-top: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px; }
+
 @media only screen and (max-width: 800px) {
-  #hobbies {
+  #about {
     width: 100%; }
 
-  #hobbies h4 {
+  #about h4 {
     width: 90%;
     font-size: 16px; } }
 #description {
   height: 2000px;
-  background-color: gray;
+  background-color: #4a90e2;
   margin-top: 70px; }
 
 #process p {
   margin-top: 50px;
+  font-size: 18px;
   display: inline-block;
   color: white; }
 
-#process img {
-  display: inline-block;
-  float: right;
-  width: 40%; }
+#pics {
+  text-align: justify;
+  margin-right: auto;
+  margin-left: auto; }
 
-#brew-image {
-  margin-top: 80px; }
+#process #pics img {
+  display: inline-block;
+  margin-top: 60px;
+  float: left;
+  margin-left: 2.6%;
+  margin-right: 2.6%;
+  height: 200px;
+  width: 28%; }
+
+#sitelink img {
+  width: 60%; }
 
 /*# sourceMappingURL=app.css.map */
