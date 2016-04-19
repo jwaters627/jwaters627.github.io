@@ -8,8 +8,10 @@ document.onmousemove = function(e) {
 
     // RESIZES HEADER BASED ON MOUSE POSITION //
 
-
-    if ($('body').scrollTop() < 100) {
+    if($('window').innerWidth() < 800){
+         $('header').removeClass('smaller');
+    }
+    else if ($('body').scrollTop() < 100) {
         $('header').removeClass('smaller');
         $('header').css({ height: 75 });
     } else if ((y - $('body').scrollTop()) < 120 && (y - $('body').scrollTop()) > 75) {
@@ -41,7 +43,7 @@ $('header').hover(function() {
 
 $(window).click(function(evt){
 
-    
+
     if($('#resume').hasClass('show')){
         $('#resume').removeClass('show');
         $('#main-div').removeClass('resume');
@@ -55,50 +57,6 @@ $(window).click(function(evt){
 
 });
 
-
-
-// $('#resumeClick').click(function() {
-//         $('#resume').addClass('show');
-//         $('#main-div').addClass('resume');
-// });
-
-// $('#main-div').click(function(){
-//      if ($('#resume').hasClass('show') === false) {
-//         return
-//     }
-//     else {
-//          $('#resume').removeClass('show');
-//         $('#main-div').removeClass('resume');
-//     }
-// });
-
-// $('header').click(function(evt){
-//     if(evt.target.id === "resumeClick" || evt.target.id === "resumeClickSmall"){
-//         return
-//     }
-//      else if ($('#resume').hasClass('show') === false) {
-//         return
-//     }
-//     else {
-//          $('#resume').removeClass('show');
-//         $('#main-div').removeClass('resume');
-//     }
-// });
-
-// $('#resume').click(function(){
-//      if ($('#resume').hasClass('show') === false) {
-//         return
-//     }
-//     else {
-//          $('#resume').removeClass('show');
-//         $('#main-div').removeClass('resume');
-//     }
-// });
-
-// $('#resumeClickSmall').click(function() {
-//         $('#resume').addClass('show');
-//         $('#main-div').addClass('resume');
-// });
 
 // ABOUT SECTION SCROLLING IMAGES //
 
@@ -167,7 +125,6 @@ $('.icon-link').click(function() {
       scrollTop: 0
     }, 1000);
     }
-    console.log(y);
     if(y === $('#photos').offset().top - navHeight) {
         animatePhotos(animateTop);
     }
