@@ -52,6 +52,18 @@ $('#main-div').click(function(){
         $('#main-div').removeClass('resume');
     }
 });
+$('header').click(function(evt){
+    if(evt.target.id === "resumeClick" || evt.target.id === "resumeClickSmall"){
+        return
+    }
+     else if ($('#resume').hasClass('show') === false) {
+        return
+    }
+    else {
+         $('#resume').removeClass('show');
+        $('#main-div').removeClass('resume');
+    }
+});
 
 $('#resume').click(function(){
      if ($('#resume').hasClass('show') === false) {
@@ -164,7 +176,6 @@ $('.about-link').click(function() {
             scrollLeft: $root.outerWidth() * 2
         }, 1000);
     };
-    console.log(y);
     if(y === $('#photos').offset().top - navHeight) {
         animatePhotos();
     }

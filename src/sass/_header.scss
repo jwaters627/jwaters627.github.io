@@ -264,8 +264,17 @@ color: #2B2B2B;
     }
 
     #resume{
-        width: 500px;
-        height: 800px;
+        overflow: visible;
+        height: 100%;;
+    }
+
+    #resume img{
+        height: 100%;
+        width: 100%;
+    }
+
+    #resume.show{
+        margin-left: 0;
     }
 
 }
