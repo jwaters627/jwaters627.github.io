@@ -58,36 +58,29 @@
     background-size: cover;
     display: inline-block;
     float: right;
-    overflow: hidden;
+    overflow: visible;
+}
+
+#about img{
+	border-radius: 500px;
+	margin-top: 40px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
 }
 
 
-#about h1{
-	font-family: 'Droid Sans', sans-serif;
-	font-size: 40px;
-	font-weight: 400;
-	text-align: center;
-	margin-top: 70px;
-	color: #3e3e3e;
-}
 
 #about h4{
 	font-size: 20px;
 	color: #3e3e3e;
 	font-family: helvetica;
 	font-weight: 400;
-	width: 60%;
-	margin: 0 auto;
+	width: 70%;
+	margin: 15px auto;
 }
 
-#about img{
-	border-radius: 200px;
-	margin-top: 80px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 200px;
-}
 
 
 @media only screen and (max-width: 800px){

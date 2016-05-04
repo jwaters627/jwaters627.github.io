@@ -8,10 +8,7 @@ document.onmousemove = function(e) {
 
     // RESIZES HEADER BASED ON MOUSE POSITION //
 
-    if($('window').innerWidth() < 800){
-         $('header').removeClass('smaller');
-    }
-    else if ($('body').scrollTop() < 100) {
+    if ($('body').scrollTop() < 100) {
         $('header').removeClass('smaller');
         $('header').css({ height: 75 });
     } else if ((y - $('body').scrollTop()) < 120 && (y - $('body').scrollTop()) > 75) {
@@ -64,10 +61,11 @@ $(window).click(function(evt){
 function handleScroll(event, delta, maxX, sender) {
 
     sender.scrollLeft -= (delta);
+    var heroHeight = $(".hero").innerHeight();
     var x = $('#photos').scrollLeft();
     if (x < maxX && x > 0) {
         event.preventDefault();
-        $('body').scrollTop(830);
+        $('body').scrollTop(heroHeight + 30);
     }
 
 }
@@ -101,7 +99,7 @@ window.onload = scrl();
 
 //  AUTOSCROLL //
 
-var $root =     $('html, body');
+var $root = $('html, body');
 var navHeight = 40;
 
 // top //
@@ -109,6 +107,8 @@ var navHeight = 40;
 $('.icon-link').click(function() {
     var y = $('body').scrollTop();
     var href = $.attr(this, 'href');
+    console.log(y);
+    console.log($('#photos').offset().top);
      var animateFinal = function() {
         $('#photos').animate({
             scrollLeft: 0
@@ -130,7 +130,7 @@ $('.icon-link').click(function() {
     }
     else if(y > $('#photos').offset().top - navHeight){
         $root.stop().animate({
-            scrollTop: $(href).offset().top - navHeight
+            scrollTop: $('#photos').offset().top
         }, 1000, animateFinal);
     }
 
@@ -174,7 +174,6 @@ $('.work-link').click(function() {
             scrollLeft: 0
         }, 1000);
     };
-    console.log(y);
     if(y === $('#photos').offset().top - navHeight) {
         animatePhotos();
     }
