@@ -581,6 +581,9 @@ h1 {
   margin-top: 10%;
   text-align: center; }
 
+#process p a {
+  color: black; }
+
 #contact {
   margin: 50px auto;
   padding: 0;
