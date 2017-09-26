@@ -47,6 +47,7 @@ class NavBar extends React.Component {
           <Link className='navItem' activeClass='active' to="contactSection" spy={true} smooth={true} duration={500}>
             <p>CONTACT</p>
           </Link>
+          <a className='navItem' href='/src/JamieWatersResume.pdf' target='blank'><p>RESUME</p></a>
         </div>
       </div>
 
