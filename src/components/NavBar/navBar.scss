@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+
+
+.navContainer{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 15%;
+	height: 100vh;
+	border-right: 2px solid rgba(0,0,0,0.3);
+	text-align: center;
+
+	.title{
+		border-bottom: 1px solid black;
+		padding: 20px 0;
+		font-family: 'Open Sans Condensed';
+
+		h1{
+			color: #1D446B;
+		}
+	}
+
+	.navItem{
+		display: block;
+		color: #000;
+		height: 48px;
+		cursor: pointer;
+
+		p{
+			font-size: 18px;
+			padding: 0;
+			margin: 0;
+			padding-top: 12px;
+			height: 18px;
+		}
+
+		&:hover{
+			text-decoration: none;
+			color: #1D446B;
+			background-color: rgba(0,0,0,0.1);
+		}
+	}
+
+	.active{
+		font-weight: 800;
+		border-left: 4px solid #1D446B;
+	}
+}
