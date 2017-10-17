@@ -41,6 +41,9 @@ class NavBar extends React.Component {
           <Link className='navItem' activeClass='active' to="aboutMeSection" spy={true} smooth={true} duration={500}>
             <p>ABOUT ME</p>
           </Link>
+          <Link className='navItem' activeClass='active' to="skillsSection" spy={true} smooth={true} duration={500}>
+            <p>SKILLS</p>
+          </Link>
           <Link className='navItem' activeClass='active' to="projectsSection" spy={true} smooth={true} duration={500}>
             <p>PROJECTS</p>
           </Link>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import AboutMe from '../AboutMe/aboutMe';
+import Skills from '../Skills/skills';
 import Projects from '../Projects/projects';
 import Contact from '../Contact/contact';
 import styles from './content.scss';
@@ -36,6 +37,7 @@ class Content extends React.Component {
     return(
       <div className="content">
         <AboutMe />
+        <Skills />
         <Projects />
         <Contact />
       </div>

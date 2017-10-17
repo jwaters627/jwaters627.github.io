@@ -37,6 +37,9 @@ class Projects extends React.Component {
   render() {
     return(
       <div className="projects" id="projectsSection">
+        <div className='projectsHeader'>
+            <h2>Projects</h2>
+          </div>
           <ProjectContainer 
               url="http://s3.amazonaws.com/design.inconceivable.ch/crimson/index.html" 
               image={Crimson} 
