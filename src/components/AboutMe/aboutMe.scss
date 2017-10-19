@@ -1,24 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
 
+
 .aboutMe{
 	width: 100%;
 	height: 100vh;
+	background: linear-gradient(0deg,rgba(0,0,0,0.6), rgba(100,100,100,0.4)), url('../../img/sunset.png');
+	background-size: cover;
 
+	
 	img{
-		border-radius: 500px;
-		width: 35%;
-		margin-left: 4%;
-		vertical-align: middle;
-		margin-top: 140px;
+		border-radius: 400px;
+		width: 30%;
+		margin-left: 32.5%;
+		margin-top: 40px;
 	}
 
 	p{
-		width: 50%;
-		float: right;
-		margin-right: 5%;
+		width: 70%;
+		color: #eee;
+		margin-left: 15%;
+		margin-top: 50px;
 		font-size: 26px;
-		margin-top: 180px;
 		font-family: 'Open Sans Condensed';
+		font-weight: 400;
 		text-align: center;
+		text-shadow: 1px 1px 1px #000;
 	}
 }
